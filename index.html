@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Holt's Hangman Game</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+  <head>
+  </head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <body>
+    <canvas id="c"></canvas>
+    <h1> Holt's Hangman Game! </h1>
+    <h3>
+    <div id='game'>
+      <div>Guesses remaning: <span id='guesses-left'></span></div>
+      <div>The word is <span id='chosen-word'></span>    </div>
+      <div id='wordForm'>
+        <label for='letter'>Enter a letter:</label>
+        <input type='text' maxlength='1' minlength='1' id='letter' onkeyup="Uppp()">
+        <button type='button' onclick='processLetter()'>Check</button> 
+        <p> Press any key to start </p>
+      </div>
+      <br>
+      <div id= 'guess'>Letters already guessed:
+        <span id='wrong_letters'></span>
+      </div>
+    </div>
+    </h3>
+    <div id='game_result'></div>
+  </body>
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

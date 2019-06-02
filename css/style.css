@@ -1,0 +1,96 @@
+* {
+    color: #7EEDD6;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    color: white;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;  
+  }
+  h1 {
+    color: rgb(222, 241, 110);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 300%;
+    text-shadow: -3px 3px red;
+    word-spacing: 30px;
+    }
+  
+  input[type=text] {
+      padding: 1px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid red;
+      border-radius: 4px;
+      text-shadow: none;
+      color: black;
+      font-size: 112%;
+  }
+  
+  body {
+    height: 100vh;
+    background-image:
+    linear-gradient(100deg, black, silver), 
+    linear-gradient(5deg, rgb(223, 147, 233), rgb(0, 56, 139));
+    background-size: .2em .2em, 100% 100% ;
+    background-blend-mode: hard-light;
+    
+  }
+  button {
+      color: #454545;
+    background: rgba(255,255,255,0.9);
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightBlue;
+    position: relative;
+    margin: 2em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    text-size: 200%;
+    text-shadow: none;
+  }
+   button:before,
+  button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: lightBlue;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out
+  }
+  
+  button:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+  }
+  
+  button:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+  }
+  
+  button:hover:before,
+  button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: rgba(240, 218, 22, 0.822)
+  }
+  
+  button:hover {
+    color: #353535;
+    background-color: #fff;
+    border-color: #fff
+  }
+
+ 
+
+  
